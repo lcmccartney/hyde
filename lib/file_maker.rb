@@ -7,8 +7,8 @@ class FileMaker
     Dir.mkdir(File.join(Dir.home, "#{path}"))
   end
 
-  
-
-
+  def create_dir_structure(path)
+    create_dir("#{path}/_output")
+  end
 
 end
