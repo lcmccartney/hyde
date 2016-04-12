@@ -20,7 +20,7 @@ class FileMakerTest <Minitest::Test
 
   def test_it_creates_sub_folders
     @file_maker.create_dir("my-blog")
-    assert Dir.exists?(File.join(Dir.home, "/my-blog/_output")), @file_maker.create_dir_structure("my-blog")
+    assert Dir.exist?(File.join(Dir.home, "/my-blog/_output")), @file_maker.create_dir_structure("my-blog")
   end
 
 end
