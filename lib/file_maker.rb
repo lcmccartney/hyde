@@ -15,8 +15,8 @@ class FileMaker
     create_dir("#{path}/source/posts")
   end
 
-  def create_files(filename)
-    File.new(File.join(Dir.home, "{filename}"))
+  def create_files(path)
+    File.write(File.join(Dir.home << "#{path}"), "index.markdown")
   end
 
 end
