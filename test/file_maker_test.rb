@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/file_maker'
 
-class FileMakerTest <Minitest::Test
+class FileMakerTest < Minitest::Test
 
   def setup
     @file_maker = FileMaker.new
