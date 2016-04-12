@@ -5,6 +5,10 @@ puts "You ran Hyde with these arguments: #{args}"
 
 # path = ARGV[1]
 
-# if ARGV[0] == "build"
-  #we want to build the base structure.
+# if ARGV[0] == "new"
+  #we want to build the (new) base structure.
   #FileMaker.new.build(path) ?
+# if ARGV[0] == "build"
+ # we want to go through all folders and files and make sure everything is converted to HTML from source to _output
+# if ARGV[0] == "post"
+ # creates a new post in the path
