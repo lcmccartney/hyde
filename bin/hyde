@@ -3,6 +3,8 @@
 args = ARGV
 puts "You ran Hyde with these arguments: #{args}"
 
-# ##############
-# Your code here
-# ##############
+# path = ARGV[1]
+
+# if ARGV[0] == "build"
+  #we want to build the base structure.
+  #FileMaker.new.build(path) ?
