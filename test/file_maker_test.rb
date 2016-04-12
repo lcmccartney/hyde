@@ -27,8 +27,14 @@ class FileMakerTest <Minitest::Test
   def test_it_creates_files
     @file_maker.create_dir("my-blog")
     @file_maker.create_dir_structure("my-blog")
-    @file_maker.create_files("/my-blog/source/index.markdown")
+    @file_maker.create_files("/my-blog/source/index.markdown", "index.markdown")
     assert File.exist?(File.join(Dir.home, "/my-blog/source/index.markdown"))
+  end
+
+  def test_it_creates_multiple_files
+    @file_maker.create_dir("my-blog")
+    @file_maker.create_dir_structure("my-blog")
+    @file_maker.create_file_structure("/my-blog")
   end
 
 end

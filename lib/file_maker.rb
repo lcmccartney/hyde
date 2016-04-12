@@ -15,8 +15,15 @@ class FileMaker
     create_dir("#{path}/source/posts")
   end
 
-  def create_files(path)
-    File.write(File.join(Dir.home << "#{path}"), "index.markdown")
+  def create_files(path, filename)
+    File.write(File.join(Dir.home << "#{path}"), "#{filename}")
+  end
+
+  def create_file_structure(path)
+    create_files("#{path}/source/index.markdown", "index.markdown")
+    create_files("#{path}/source/css/main.css", "main.css")
+    create_files("#{path}/source/pages/about.markdown", "about.markdown")
+    create_files("#{path}/source/posts/date-welcome-to-hyde.markdown", "date-welcome-to-hyde.markdown")
   end
 
 end
