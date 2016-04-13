@@ -2,6 +2,8 @@ require 'kramdown'
 
 class FileConverter
 
+  include PostMod
+
   def find_markdown(path)
     Dir[(File.join(Dir.home, "#{path}/source/**/*.markdown"))]
   end

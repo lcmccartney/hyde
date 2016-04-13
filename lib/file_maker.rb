@@ -1,3 +1,5 @@
+require 'erb'
+
 class FileMaker
 
  #when build is called, we want a method that calls create dir, create_dir_structure and create_file_structure
@@ -18,6 +20,7 @@ class FileMaker
     create_dir("#{path}/source/posts")
     create_dir("#{path}/source/css")
     create_dir("#{path}/source/pages")
+    create_dir("#{path}/source/layouts")
   end
 
   def create_files(path, content)
@@ -29,6 +32,7 @@ class FileMaker
     create_files("#{path}/source/css/main.css", "main.css")
     create_files("#{path}/source/pages/about.markdown", "about.markdown")
     create_files("#{path}/source/posts/#{date}-welcome-to-hyde.markdown", "date-welcome-to-hyde.markdown")
+    create_files("#{path}/source/layouts/default.html.erb", File.read("./txt/html.txt"))
   end
 
   def date
