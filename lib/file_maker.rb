@@ -11,14 +11,17 @@ class FileMaker
 
   def create_dir_structure(path)
     create_dir("#{path}/_output")
+    create_dir("#{path}/_output/css")
+    create_dir("#{path}/_output/pages")
+    create_dir("#{path}/_output/posts")
     create_dir("#{path}/source")
+    create_dir("#{path}/source/posts")
     create_dir("#{path}/source/css")
     create_dir("#{path}/source/pages")
-    create_dir("#{path}/source/posts")
   end
 
-  def create_files(path, filename)
-    File.write(File.join(Dir.home << "#{path}"), "#{filename}")
+  def create_files(path, content)
+    File.write(File.join(Dir.home << "#{path}"), "#{content}")
   end
 
   def create_file_structure(path)
