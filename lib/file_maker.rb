@@ -32,7 +32,7 @@ class FileMaker
     create_files("#{path}/source/css/main.css", "main.css")
     create_files("#{path}/source/pages/about.markdown", "about.markdown")
     create_files("#{path}/source/posts/#{date}-welcome-to-hyde.markdown", "date-welcome-to-hyde.markdown")
-    create_files("#{path}/source/layouts/default.html.erb", File.read("./txt/html.txt"))
+    create_files("#{path}/source/layouts/default.html.erb", File.read("./txt/html."))
   end
 
   def date

@@ -1,6 +1,6 @@
 <html>
-  <head><title>#{ARGV[1]}</title></head>
+  <head><title><%= "#{title}" %></title></head>
   <body>
-    <%= content_goes_here %>
+    <%= content %>
   </body>
 </html>
