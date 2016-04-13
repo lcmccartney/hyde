@@ -13,7 +13,6 @@ class FileConverter
       #use kramdown to create converted copies into the _output
       #need to extract contents from each file
       new_path = file.sub("source", "_output")
-      require 'pry' ; binding.pry
       content = File.open(file)
       html = Kramdown::Document.new(content).to_html
       File.new(html, new_path)
