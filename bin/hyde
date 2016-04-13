@@ -10,5 +10,22 @@ puts "You ran Hyde with these arguments: #{args}"
   #FileMaker.new.build(path) ?
 # if ARGV[0] == "build"
  # we want to go through all folders and files and make sure everything is converted to HTML from source to _output
-# if ARGV[0] == "post"
- # creates a new post in the path
+
+
+  puts "Created a new post file at #{{path}}source/posts/":date"-juicy-post.markdown"
+
+case ARGV[0]
+  when "new"
+    file_maker.create_dir.create_dir_structure
+
+  when "build"
+
+  when "post"
+    post = Post.new(:title => ARGV[1])file_maker.create_files
+    puts "Created a new post file at #{{path}}source/posts/":date"-juicy-post.markdown"
+  else
+    puts "Type:"
+    puts "  hyde new (my-blog-name) to create a new blog"
+    puts "  hyde build to do some cool shit"
+    puts "  hyde post 'title of post' to create a new post"
+  end
