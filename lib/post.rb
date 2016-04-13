@@ -7,8 +7,7 @@ class Post
   end
 
   def body(title)
-     "# #{title}\n"
-     "Your content here!"
+     "# #{title}\nYour content here!"
   end
 #we want to be able to make # post title inserted when we make a post(argv[2]*)
 # Insert standard outline : body
