@@ -9,7 +9,7 @@ class FileConverterTest < Minitest::Test
   end
 
   def test_it_can_find_markdown_files
-    assert_equal ["/Users/lmac/my-blog/source/index.markdown", "/Users/lmac/my-blog/source/pages/about.markdown", "/Users/lmac/my-blog/source/posts/date-welcome-to-hyde.markdown"], @file_converter.find_markdown("my-blog")
+    assert_equal ["/Users/lmac/my-blog/source/index.markdown", "/Users/lmac/my-blog/source/pages/about.markdown", "/Users/lmac/my-blog/source/posts/2016-04-13-welcome-to-hyde.markdown"], @file_converter.find_markdown("my-blog")
   end
 
   def test_it_can_use_kramdown_to_convert_markdown_to_html

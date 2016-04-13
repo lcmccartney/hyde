@@ -1,8 +1,9 @@
 require 'kramdown'
+require 'erb'
 
 class FileConverter
 
-  include PostMod
+
 
   def find_markdown(path)
     Dir[(File.join(Dir.home, "#{path}/source/**/*.markdown"))]
@@ -13,6 +14,7 @@ class FileConverter
   end
 
   def markdown_to_html(path)
+      title = "Pizza Post"
     find_markdown(path).each do |file|
       new_path = file.sub("source", "_output")
       new_path = new_path.split(".")
@@ -20,7 +22,9 @@ class FileConverter
       content = File.read(file)
       html = Kramdown::Document.new(content).to_html
       File.new(new_path, 'w+')
-      File.write(new_path, html)
+      content = ERB.new(File.read("./txt/html.txt")).result(binding)
+      File.write(new_path, content)
+      # File.write(new_path, html)
     end
   end
 
@@ -32,7 +36,9 @@ class FileConverter
       content = File.read(file)
       html = Kramdown::Document.new(content).to_html
       File.new(new_path, 'w+')
-      File.write(new_path, html)
+      content = ERB.new(File.read("./txt/html.txt")).result(binding)
+      File.write(new_path, content)
+      # File.write(new_path, html)
     end
   end
 
