@@ -20,7 +20,7 @@ class FileConverter
       content = File.read(file)
       html = Kramdown::Document.new(content).to_html
       File.new(new_path, 'w+')
-      content = ERB.new(File.read("./txt/html.txt")).result(binding)
+      content = ERB.new(File.read("./lib/site_templates/post.txt")).result(binding)
       File.write(new_path, content)
       # File.write(new_path, html)
     end
@@ -34,8 +34,8 @@ class FileConverter
       content = File.read(file)
       html = Kramdown::Document.new(content).to_html
       File.new(new_path, 'w+')
-      content = ERB.new(File.read("./txt/html.txt")).result(binding)
-      File.write(new_path, content)
+      full_html = ERB.new(File.read("./lib/site_templates/post.txt")).result(binding)
+      File.write(new_path, full_html)
       # File.write(new_path, html)
     end
 
