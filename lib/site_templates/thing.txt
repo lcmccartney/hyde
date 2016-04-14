@@ -1,8 +1,7 @@
 <html>
   <head><title><%= title %></title></head>
   <body>
-    <%= html %>
     <%= content %>
-    This is post.txt doing stuff
+    This is thing.txt doing stuff
   </body>
 </html>

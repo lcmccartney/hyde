@@ -26,11 +26,11 @@ class FileMaker
   end
 
   def create_file_structure(path)
-    create_file("#{path}/source/index.markdown", "STUFF")
-    create_file("#{path}/source/css/main.css", "COOLSTUFF")
-    create_file("#{path}/source/pages/about.markdown", "WOWZA")
-    create_file("#{path}/source/posts/#{date}-welcome-to-hyde.markdown", "RRRR")
-    create_file("#{path}/source/layouts/default.html.erb", File.read("./lib/site_templates/post.txt"))
+    create_file("#{path}/source/layouts/default.html.erb", File.read("./lib/site_templates/default.txt"))
+    create_file("#{path}/source/index.markdown", "INDEX")
+    create_file("#{path}/source/css/main.css", File.read("./lib/site_templates/css.txt"))
+    create_file("#{path}/source/pages/about.markdown", "ABOUT")
+    create_file("#{path}/source/posts/#{date}-welcome-to-hyde.markdown", File.read("./lib/site_templates/welcome_post.txt"))
   end
 
   def date

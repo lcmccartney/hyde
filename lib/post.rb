@@ -7,7 +7,7 @@ class Post
   end
 
   def body(title)
-    "# #{title}\n\nAdd your content here!"
+    "# #{title}\n\nYour content here!"
   end
 
   def date
