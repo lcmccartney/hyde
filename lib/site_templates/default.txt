@@ -1,0 +1,9 @@
+<html>
+  <head><title>WHAT</title></head>
+  <body>
+
+    <%= html %>
+
+    This is default.txt doing stuff
+  </body>
+</html>
