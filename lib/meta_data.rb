@@ -1,8 +1,11 @@
+require_relative 'file_maker'
+
 class MetaData
 
-  def format_tags(tags)
+  def format_tags_and_make_tag_files(tags)
     downcased = downcase_tags(tags)
-    snake_case(downcased)
+    formatted_tags = snake_case(downcased)
+    make_files_for_tags(formatted_tags)
   end
 
   def find_meta_data(content)
@@ -23,5 +26,10 @@ class MetaData
     end
   end
 
+  def make_files_for_tags(tags)
+    tags[0].split(", ").map do |tag|
+      FileMaker.new.create_file("/my-blog/_output/tags/#{tag}.html", "#{tag}")
+    end
+  end
 
 end
