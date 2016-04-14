@@ -3,8 +3,6 @@ require 'erb'
 
 class FileConverter
 
-
-
   def find_markdown(path)
     Dir[(File.join(Dir.home, "#{path}/source/**/*.markdown"))]
   end
@@ -40,6 +38,8 @@ class FileConverter
       File.write(new_path, content)
       # File.write(new_path, html)
     end
+
+
   end
 
 end
