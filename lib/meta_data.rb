@@ -1,9 +1,14 @@
 class MetaData
 
+  def format_tags(tags)
+    downcased = downcase_tags(tags)
+    snake_case(downcased)
+  end
+
   def find_meta_data(content)
     split_contents = content.split('---')
     split_contents = split_contents[1].strip.split(":")
-    meta_hash = { split_contents[0] => split_contents[1]}
+    meta_hash = { split_contents[0] => tags = split_contents[1].lstrip.split(", ")}
   end
 
   def downcase_tags(tags)
@@ -13,18 +18,9 @@ class MetaData
   end
 
   def snake_case(tags)
-    downcase_tags(tags).map do |tag|
-      tag.sub(" ", "_")
+    tags.map do |tag|
+      tag.sub(" ", "_").split(",_").join(", ")
     end
-  end
-
-  def turn_tags_into_hash(tags)
-    { "tags" => tags }
-  end
-
-  def formatted_hash(tags)
-    formatted_hash = snake_case(tags)
-    turn_tags_into_hash(formatted_hash)
   end
 
 
