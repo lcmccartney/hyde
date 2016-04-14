@@ -19,19 +19,11 @@ class MetaDataTest < Minitest::Test
   end
 
   def test_it_can_turn_spaces_into_snake_case
-    assert_equal ["italian_food, flatbread"], @meta_data.snake_case(({"tags"=> "italian food, flatbread" }))
+    assert_equal ["italian_food, flatbread"], @meta_data.snake_case({"tags" => "Italian Food, flatbread"})
   end
 
-  # def test_it_can_have_downcased_tags_in_the_hash
-  #   assert_equal ({"tags"=> ["italian food, flatbread"] }) , @meta_data.downcased_hash({"tags" => "Italian Food, flatbread"})
-  # end
-  #
-  # def test_it_can_have_snake_case_tags_in_the_hash
-  #   assert_equal ({"tags"=> ["Italian_Food, flatbread"] }), @meta_data.snake_case_hash({"tags" => "Italian Food, flatbread"})
-  # end
-
   def test_it_can_format_hash_with_downcase_and_snake_case
-    assert_equal ({"tags"=> ["italian food, flatbread"] }) , @meta_data.formatted_hash({"tags" => "Italian Food, flatbread"})
+    assert_equal ({"tags"=> ["italian_food, flatbread"] }) , @meta_data.formatted_hash({"tags" => "Italian Food, flatbread"})
   end
 
 end

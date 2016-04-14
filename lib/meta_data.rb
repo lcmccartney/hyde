@@ -13,9 +13,8 @@ class MetaData
   end
 
   def snake_case(tags)
-    tags.map do |key, value|
-      # require 'pry' ; binding.pry
-      value.sub(" ", "_")
+    downcase_tags(tags).map do |tag|
+      tag.sub(" ", "_")
     end
   end
 
@@ -24,9 +23,8 @@ class MetaData
   end
 
   def formatted_hash(tags)
-    downcased_tags = downcase_tags(tags)
-    formatted_tags = snake_case(downcased_tags)
-    turn_tags_into_hash(formatted_tags)
+    formatted_hash = snake_case(tags)
+    turn_tags_into_hash(formatted_hash)
   end
 
 
