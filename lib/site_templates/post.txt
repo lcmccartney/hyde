@@ -1,0 +1,6 @@
+<html>
+  <head><title><font color = "red"><%= title %></font></title></head>
+  <body>
+    <%= html %> what even goes here
+  </body>
+</html>

@@ -5,7 +5,7 @@ require './lib/post'
 class PostTest < Minitest::Test
 
   def test_it_creates_a_new_post
-    FileMaker.new.create_files("/my-blog/source/posts/new_post.markdown", "* content in the form of a list!")
+    FileMaker.new.create_file("/my-blog/source/posts/new_post.markdown", "* content in the form of a list!")
     assert File.exist?(File.join(Dir.home << "/my-blog/source/posts/new_post.markdown"))
   end
 

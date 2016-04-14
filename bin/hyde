@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require './lib/file_maker'
 require './lib/file_converter'
+require './lib/post'
 
 args = ARGV
 puts "You ran Hyde with these arguments: #{args}"
@@ -28,10 +29,10 @@ case ARGV[0]
     fileconverter.md_to_html(ARGV[1])
     fileconverter.markdown_to_html(ARGV[1])
 
+  when "post"
+    new_post = Post.new
+    new_post.post(ARGV[1], ARGV[2])
 
-  # when "post"
-  #   post = Post.new(:title => ARGV[1])file_maker.create_files
-  #   puts "Created a new post file at #{{path}}source/posts/":date"-juicy-post.markdown"
   # when
   #   puts "Type:"
   #   puts "  hyde new (my-blog-name) to create a new blog"
