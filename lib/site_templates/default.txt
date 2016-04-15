@@ -3,7 +3,11 @@
   <body>
 
     <%= html %>
-
+    <br><br>
+    <hr>
+    <% for link in tagfile_links %>
+    <%= link %><br>
+    <% end %>
     This is default.txt doing stuff
   </body>
 </html>

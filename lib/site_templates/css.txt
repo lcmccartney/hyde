@@ -1,0 +1,1 @@
+  <%= "<a href=\"#{link[:relative_path]}\">#{link[:name]}</a>" %>
