@@ -2,6 +2,7 @@
 require './lib/file_maker'
 require './lib/file_converter'
 require './lib/post'
+require './lib/watch_fs'
 
 args = ARGV
 puts "You ran Hyde with these arguments: #{args}"
@@ -19,4 +20,6 @@ case ARGV[0]
     argv0, argv1, *argv2 = ARGV
     new_post = Post.new
     new_post.post(ARGV[1], argv2.join("_"))
+  when "watchfs"
+    WatchFs.new.start_listening(ARGV[1])
   end
