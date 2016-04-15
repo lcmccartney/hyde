@@ -22,5 +22,6 @@ case ARGV[0]
     new_post = Post.new
     new_post.post(ARGV[1], argv2.join("_"))
   when "watchfs"
+    # require 'pry' ; binding.pry
     WatchFs.new.start_listening(ARGV[1])
   end
