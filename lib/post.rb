@@ -7,11 +7,7 @@ class Post
   end
 
   def body(title)
-    " ---
-      tags: Italian Food, flatbread
-      ---
-
-    # #{title}\n\nYour content here!"
+    "---\ntags: tag1, tag2\n---\n\n# #{title}\n\nYour content here!"
   end
 
   def date

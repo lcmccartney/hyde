@@ -1,5 +1,9 @@
 <html>
-  <head><title>WHAT</title></head>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
   <body>
 
     <%= html %>
@@ -8,6 +12,6 @@
     <% for link in tagfile_links %>
     <%= link %><br>
     <% end %>
-    This is default.txt doing stuff
+
   </body>
 </html>
