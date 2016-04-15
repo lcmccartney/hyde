@@ -1,13 +1,9 @@
 <html>
-<<<<<<< HEAD
-  <head><title> <%= title %> </title></head>
-=======
-  <head>
-    <title></title>
+  <head><title> <%= title %> </title>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
->>>>>>> 78684fc7f93541f1dd4a067698c255d01cf171ae
+
   <body>
 
     <%= html %>
@@ -16,9 +12,6 @@
     <% for link in tagfile_links %>
     <%= link %><br>
     <% end %>
-<<<<<<< HEAD
-=======
 
->>>>>>> 78684fc7f93541f1dd4a067698c255d01cf171ae
   </body>
 </html>
