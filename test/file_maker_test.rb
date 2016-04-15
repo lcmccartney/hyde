@@ -10,32 +10,33 @@ class FileMakerTest < Minitest::Test
   end
 
   def test_it_creates_the_first_directory
-    @file_maker.create_dir("my-blog")
-    assert Dir.exist?(File.join(Dir.home, "my-blog"))
+    @file_maker.create_dir("my_blog")
+    assert Dir.exist?(File.join(Dir.home, "my_blog"))
   end
 
   def test_it_errors_if_dir_exists
-    @file_maker.create_dir("my-blog")
-    assert_equal "Directory already exists!", @file_maker.create_dir("my-blog")
+    @file_maker.create_dir("my_blog")
+    assert_equal "Directory already exists!", @file_maker.create_dir("my_blog")
   end
 
   def test_it_creates_sub_folders
-    @file_maker.create_dir("my-blog")
-    @file_maker.create_dir_structure("my-blog")
-    assert Dir.exist?(File.join(Dir.home, "/my-blog/_output"))
+    @file_maker.create_dir("my_blog")
+    @file_maker.create_dir_structure("my_blog")
+    assert Dir.exist?(File.join(Dir.home, "/my_blog/_output"))
   end
 
   def test_it_creates_files
-    @file_maker.create_dir("my-blog")
-    @file_maker.create_dir_structure("my-blog")
-    @file_maker.create_file("/my-blog/source/index.markdown", "index.markdown")
-    assert File.exist?(File.join(Dir.home, "/my-blog/source/index.markdown"))
+    @file_maker.create_dir("my_blog")
+    @file_maker.create_dir_structure("my_blog")
+    @file_maker.create_file("/my_blog/source/index.markdown", "index.markdown")
+    assert File.exist?(File.join(Dir.home, "/my_blog/source/index.markdown"))
   end
 
   def test_it_creates_multiple_files
-    @file_maker.create_dir("my-blog")
-    @file_maker.create_dir_structure("my-blog")
-    @file_maker.create_file_structure("/my-blog")
+    @file_maker.create_dir("my_blog")
+    @file_maker.create_dir_structure("my_blog")
+    @file_maker.create_file_structure("/my_blog")
+    assert File.exist?(File.join(Dir.home, "/my_blog/source/pages/about.markdown"))
   end
 
 end

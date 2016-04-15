@@ -16,6 +16,7 @@ case ARGV[0]
   when "build"
     fileconverter = FileConverter.new
     fileconverter.markdown_to_html(ARGV[1])
+    fileconverter.md_to_html(ARGV[1])
   when "post"
     argv0, argv1, *argv2 = ARGV
     new_post = Post.new
