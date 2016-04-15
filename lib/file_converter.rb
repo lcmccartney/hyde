@@ -17,16 +17,15 @@ class FileConverter
       new_path = file.sub("source", "_output")
       new_path = new_path.split(".")
       new_path = new_path[0] << '.html'
-
-      content = File.read(file) #this is reading the markdown file
-      
+      content = File.read(file)
+      title = new_path.split("/")[-1].split(".")[0]
       metadata_parser = MetaData.new
       tagfile_links = metadata_parser.parse_tags_and_make_tag_files(content,new_path,path)
-
-      html = Kramdown::Document.new(content).to_html #takes the markdown and converts it to html
+      content = content.split("---").last.lstrip
+      html = Kramdown::Document.new(content).to_html
       File.new(new_path, 'w+')
       content = ERB.new(File.read(File.join(Dir.home, "#{path}/source/layouts/default.html.erb"))).result(binding)
-      File.write(new_path, content) #spits out the html file in _outputs
+      File.write(new_path, content)
     end
   end
 

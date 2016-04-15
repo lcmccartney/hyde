@@ -3,6 +3,5 @@
   <body>
     <%= html %>
     <%= content %>
-    This is post.txt doing stuff
   </body>
 </html>

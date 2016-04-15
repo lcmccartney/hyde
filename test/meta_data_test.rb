@@ -1,7 +1,9 @@
+require_relative 'test_helper'
+
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/meta_data'
-require_relative 'test_helper'
+
 
 class MetaDataTest < Minitest::Test
 
