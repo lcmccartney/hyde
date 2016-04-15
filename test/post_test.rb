@@ -3,7 +3,6 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/post'
 
-
 class PostTest < Minitest::Test
 
   def test_it_creates_a_new_post
