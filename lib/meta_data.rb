@@ -19,7 +19,7 @@ class MetaData
   end
 
   def downcase_tags(tags)
-    tags.map do |value|
+    tags.map do |key, value|
       value.downcase
     end
   end

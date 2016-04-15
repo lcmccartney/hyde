@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.0/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-04-15T00:05:38-06:00">2016-04-15T00:05:38-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-04-15T00:32:07-06:00">2016-04-15T00:32:07-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">88.61%</span></span>
+    (<span class="covered_percent"><span class="green">91.46%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.09
+         1.93
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>7</b> files in total.
-    <b>158</b> relevant lines. 
-    <span class="green"><b>140</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <b>164</b> relevant lines. 
+    <span class="green"><b>150</b> lines covered</span> and
+    <span class="red"><b>14</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>36</td>
         <td>36</td>
         <td>0</td>
-        <td>3.4</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -67,17 +67,17 @@
         <td>27</td>
         <td>26</td>
         <td>1</td>
-        <td>3.5</td>
+        <td>3.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#498b2c4bc61b0881e9d6be1e8012bd3008e2b2d6" class="src_link" title="lib/meta_data.rb">lib/meta_data.rb</a></td>
-        <td class="red strong">48.48 %</td>
+        <td class="red strong">60.61 %</td>
         <td>53</td>
         <td>33</td>
-        <td>16</td>
-        <td>17</td>
-        <td>1.2</td>
+        <td>20</td>
+        <td>13</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -87,23 +87,23 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#f0a7a65c805a476f6ed2f0a56c91b471ddeab0ba" class="src_link" title="test/file_maker_test.rb">test/file_maker_test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>42</td>
-        <td>26</td>
-        <td>26</td>
+        <td>27</td>
+        <td>27</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#6a786f3cb5a8be7a2023b62982d7ae9eac31dc56" class="src_link" title="test/meta_data_test.rb">test/meta_data_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>36</td>
+        <td>30</td>
         <td>16</td>
         <td>16</td>
         <td>0</td>
@@ -113,11 +113,11 @@
       <tr>
         <td class="strong"><a href="#b8d40a4410d5a2a42a0229c8f9546cc81644b3b1" class="src_link" title="test/post_test.rb">test/post_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>17</td>
-        <td>11</td>
-        <td>11</td>
+        <td>26</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.3</td>
       </tr>
       
     </tbody>
@@ -246,74 +246,74 @@
           <code class="ruby">    find_markdown(path).each do |file|</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
           
           <code class="ruby">      new_path = file.sub(&quot;source&quot;, &quot;_output&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="18">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="18">
+          <span class="hits">3</span>
           
           <code class="ruby">      new_path = new_path.split(&quot;.&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="19">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="19">
+          <span class="hits">3</span>
           
           <code class="ruby">      new_path = new_path[0] &lt;&lt; &#39;.html&#39;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="20">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
           
           <code class="ruby">      content = File.read(file)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="21">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">      title = new_path.split(&quot;/&quot;)[-1].split(&quot;.&quot;)[0]</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="22">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
           <code class="ruby">      metadata_parser = MetaData.new</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="23">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
           
           <code class="ruby">      tagfile_links = metadata_parser.parse_tags_and_make_tag_files(content,new_path,path)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="24">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="24">
+          <span class="hits">3</span>
           
           <code class="ruby">      content = content.split(&quot;---&quot;).last.lstrip</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="25">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="25">
+          <span class="hits">3</span>
           
           <code class="ruby">      html = Kramdown::Document.new(content).to_html</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="26">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="26">
+          <span class="hits">3</span>
           
           <code class="ruby">      File.new(new_path, &#39;w+&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="27">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="27">
+          <span class="hits">3</span>
           
           <code class="ruby">      content = ERB.new(File.read(File.join(Dir.home, &quot;#{path}/source/layouts/default.html.erb&quot;))).result(binding)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="28">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="28">
+          <span class="hits">3</span>
           
           <code class="ruby">      File.write(new_path, content)</code>
         </li>
@@ -618,8 +618,8 @@
           <code class="ruby">  def create_file(path, content)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="25">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="25">
+          <span class="hits">10</span>
           
           <code class="ruby">    File.write(File.join(Dir.home, &quot;#{path}&quot;), &quot;#{content}&quot;)</code>
         </li>
@@ -721,19 +721,19 @@
         <div class="source_table" id="498b2c4bc61b0881e9d6be1e8012bd3008e2b2d6">
   <div class="header">
     <h3>lib/meta_data.rb</h3>
-    <h4><span class="red">48.48 %</span> covered</h4>
+    <h4><span class="red">60.61 %</span> covered</h4>
     <div>
       <b>33</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
-      <span class="red"><b>17</b> lines missed.</span>
+      <span class="green"><b>20</b> lines covered</span> and
+      <span class="red"><b>13</b> lines missed.</span>
     </div>
   </div>
   
   <pre>
     <ol>
       
-        <li class="covered" data-hits="2" data-linenumber="1">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;file_maker&#39;</code>
         </li>
@@ -744,8 +744,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="3">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
           <code class="ruby">class MetaData</code>
         </li>
@@ -756,14 +756,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">  def parse_tags_and_make_tag_files(content, post_path, path)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="6">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="7" data-linenumber="6">
+          <span class="hits">7</span>
           
           <code class="ruby">    return [] if content.split(&quot;---&quot;)[1] == nil</code>
         </li>
@@ -816,26 +816,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
           <code class="ruby">  def find_meta_data(content)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">    split_contents = content.split(&#39;---&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="17">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">    split_contents = split_contents[1].strip.split(&quot;:&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="18">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
           <code class="ruby">    split_contents[1].lstrip.split(&quot;, &quot;)</code>
         </li>
@@ -852,20 +852,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby">  def downcase_tags(tags)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
-          <code class="ruby">    tags.map do |value|</code>
+          <code class="ruby">    tags.map do |key, value|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="23">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
           
           <code class="ruby">      value.downcase</code>
         </li>
@@ -888,20 +888,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
           <code class="ruby">  def snake_case(tags)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="28">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
           
           <code class="ruby">    tags.map do |tag|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="29">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
           
           <code class="ruby">      tag.sub(&quot; &quot;, &quot;_&quot;).split(&quot;,_&quot;).join(&quot;, &quot;)</code>
         </li>
@@ -924,8 +924,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="33">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
           <code class="ruby">  def make_files_for_tags(tags, post_path, path)</code>
         </li>
@@ -996,26 +996,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="45">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
           <code class="ruby">  def generate_tag_links(post_path,tag_paths)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
-          
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
           
           <code class="ruby">    tagfile_links = []</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
           <code class="ruby">    tag_paths.each do |tag_path|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
           <code class="ruby">      tagfile_links &lt;&lt; &quot;&lt;a href=&#39;../tags/#{tag_path}.html&#39;&gt;#{tag_path}&lt;/a&gt;&quot;</code>
         </li>
@@ -1026,8 +1026,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
           
           <code class="ruby">    tagfile_links</code>
         </li>
@@ -1068,8 +1068,8 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
           
           <code class="ruby">require_relative &#39;file_maker&#39;</code>
         </li>
@@ -1080,8 +1080,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
           <code class="ruby">class Post</code>
         </li>
@@ -1092,16 +1092,16 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
           <code class="ruby">  def post(path, title)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
-          <code class="ruby">    FileMaker.new.create_file(&quot;/#{path}/source/posts/#{date}-#{title}.markdown&quot;, body(title))</code>
+          <code class="ruby">    FileMaker.new.create_file(&quot;/#{path}/source/posts/#{date}-#{title}.markdown&quot;, body)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -1116,14 +1116,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
-          <code class="ruby">  def body(title)</code>
+          <code class="ruby">  def body</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
           <code class="ruby">    &quot;Your content here!&quot;</code>
         </li>
@@ -1140,20 +1140,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
           
           <code class="ruby">  def date</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
           <code class="ruby">    date = Time.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
           
           <code class="ruby">    date.strftime(&#39;%Y-%m-%d&#39;)</code>
         </li>
@@ -1185,8 +1185,8 @@
     <h3>test/file_maker_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>26</b> relevant lines. 
-      <span class="green"><b>26</b> lines covered</span> and
+      <b>27</b> relevant lines. 
+      <span class="green"><b>27</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1422,8 +1422,8 @@
           <code class="ruby">    @file_maker.create_file_structure(&quot;/my_blog&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
-          
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
           <code class="ruby">    assert File.exist?(File.join(Dir.home, &quot;/my_blog/source/pages/about.markdown&quot;))</code>
         </li>
@@ -1533,148 +1533,112 @@
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">    `bin/hyde new blog`</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">    `bin/hyde build blog`</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  def test_it_can_find_tags</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">    assert_equal [&quot;Italian Food&quot;, &quot;flatbread&quot;], @meta_data.find_meta_data(@test_helper.meta_helper)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">  def test_it_can_find_tags</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">    assert_equal ({&quot;tags&quot;=&gt;[&quot;Italian Food&quot;, &quot;flatbread&quot;]}), @meta_data.find_meta_data(@test_helper.meta_helper)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  def test_it_can_downcase_tags</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">    assert_equal [&quot;italian food, flatbread&quot;] , @meta_data.downcase_tags({&quot;tags&quot; =&gt; &quot;Italian Food, flatbread&quot;})</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">  def test_it_can_downcase_tags</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">    assert_equal [&quot;italian food, flatbread&quot;] , @meta_data.downcase_tags({&quot;tags&quot; =&gt; &quot;Italian Food, flatbread&quot;})</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  def test_it_can_turn_spaces_into_snake_case</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">    assert_equal [&quot;italian_food, flatbread&quot;], @meta_data.snake_case([&quot;italian_food, flatbread&quot;])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">  def test_it_can_turn_spaces_into_snake_case</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    assert_equal [&quot;italian_food, flatbread&quot;], @meta_data.snake_case([&quot;italian_food, flatbread&quot;])</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  def test_it_generates_tag_links</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">    assert_equal [&quot;&lt;a href=&#39;../tags/tag_one.html&#39;&gt;tag_one&lt;/a&gt;&quot;, &quot;&lt;a href=&#39;../tags/tag_two.html&#39;&gt;tag_two&lt;/a&gt;&quot;], @meta_data.generate_tag_links(&quot;this_blog&quot;, [&quot;tag_one&quot;, &quot;tag_two&quot;])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">  def test_it_can_make_tag_files</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">    assert_equal [12, 9], @meta_data.make_files_for_tags([&quot;italian_food, flatbread&quot;])</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby">  # def test_it_can_return_empty_array_if_no_tags_are_given</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  #   assert_equal &quot;&quot;, @meta_data.parse_tags_and_make_tag_files(&quot;content&quot;, &quot;&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">end</code>
@@ -1689,8 +1653,8 @@
     <h3>test/post_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1743,19 +1707,19 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_creates_a_new_post</code>
+          <code class="ruby">  def setup</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
           
-          <code class="ruby">    FileMaker.new.create_file(&quot;/my-blog/source/posts/new_post.markdown&quot;, &quot;* content in the form of a list!&quot;)</code>
+          <code class="ruby">    `bin/hyde new new_blog`</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
-          <code class="ruby">    assert File.exist?(File.join(Dir.home &lt;&lt; &quot;/my-blog/source/posts/new_post.markdown&quot;))</code>
+          <code class="ruby">    `bin/hyde build new_blog`</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -1773,19 +1737,19 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_creates_a_new_post_with_body</code>
+          <code class="ruby">  def test_it_creates_a_new_post</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    Post.new.post(&quot;my-blog&quot;, &quot;title&quot;)</code>
+          <code class="ruby">    FileMaker.new.create_file(&quot;/new_blog/source/posts/new_post.markdown&quot;, &quot;* content in the form of a list!&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert File.exist?(File.join(Dir.home &lt;&lt; &quot;/my-blog/source/posts/new_post.markdown&quot;))</code>
+          <code class="ruby">    assert File.exist?(File.join(Dir.home &lt;&lt; &quot;/new_blog/source/posts/new_post.markdown&quot;))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -1795,6 +1759,60 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_creates_a_new_post_with_body</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Post.new.post(&quot;new_blog&quot;, &quot;title&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert File.exist?(File.join(Dir.home &lt;&lt; &quot;/new_blog/source/posts/new_post.markdown&quot;))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_return_a_body_to_a_file</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;Your content here!&quot;, Post.new.body</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">end</code>
