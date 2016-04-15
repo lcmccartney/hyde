@@ -1,1 +1,5 @@
-  <%= "<a href=\"#{link[:relative_path]}\">#{link[:name]}</a>" %>
+<style>
+body {
+    background: orange;
+}
+</style>

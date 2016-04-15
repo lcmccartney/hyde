@@ -32,11 +32,11 @@ class MetaData
 
   def make_files_for_tags(tags, post_path, path)
     tag_paths = []
-    tags.map do |tag|
+      tags.each do |tag|
       tag_path = "#{path}/_output/tags/#{tag}.html"
       tag_paths << tag_path
-      File.open(File.join(Dir.home,tag_path), 'a') { |f|
-        f.puts("<a href='#{post_path}'>#{post_path}</a>")
+      File.open(File.join(Dir.home,tag_path),"a") { |f|
+        f.puts("<a href='#{post_path}'>#{tag}</a>")
       }
     end
     tag_paths
