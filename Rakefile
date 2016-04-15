@@ -19,4 +19,9 @@ namespace :sanitation do
 
   desc "Check both line length and method length"
   task :all => [:lines, :methods]
+  end
+  task :default => :test
+  task :test do
+    Dir.glob('./test/*_test.rb').each { |file| require file}
+
 end

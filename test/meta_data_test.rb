@@ -1,7 +1,9 @@
+require_relative 'test_helper'
+
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/meta_data'
-require_relative 'test_helper'
+
 
 class MetaDataTest < Minitest::Test
 
@@ -21,10 +23,6 @@ class MetaDataTest < Minitest::Test
   def test_it_can_turn_spaces_into_snake_case
     assert_equal ["italian_food, flatbread"], @meta_data.snake_case(["italian_food, flatbread"])
   end
-
-  # def test_it_can_format_tags
-  #   assert_equal ["italian_food, flatbread"], @meta_data.format_tags_and_make_tag_files({"tags" => "Italian Food, flatbread"})
-  # end
 
   def test_it_can_make_tag_files
     assert_equal [12, 9], @meta_data.make_files_for_tags(["italian_food, flatbread"])

@@ -5,7 +5,5 @@ To get started: Type "bin/hyde post <your-blog> <blog-title>" (without the carro
 Navigate to your posts file and edit the new post with markdown.
 Once you're done, type "bin/hyde build <your-blog>" in the terminal.
 Then you can find your new post converted to an .html file and ready to publish on the web!
-
-    This is welcome_post.txt doing stuff
   </body>
 </html>

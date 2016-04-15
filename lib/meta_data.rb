@@ -3,23 +3,14 @@ require_relative 'file_maker'
 class MetaData
 
   def parse_tags_and_make_tag_files(content, post_path, path)
-    p "this thing is"
-    p content.split("---")[1]
     return [] if content.split("---")[1] == nil
     tags = find_meta_data(content)
-    p tags
     downcased = downcase_tags(tags)
     formatted_tags = snake_case(downcased)
     tag_paths = make_files_for_tags(formatted_tags, post_path, path)
-    tagfile_links = generate_tag_links(post_path,tag_paths)
+    tagfile_links = generate_tag_links(post_path, formatted_tags)
     tagfile_links
   end
-
-  # def make_tag_files
-  #   tag_paths = make_files_for_tags(formatted_tags, post_path, path)
-  #   tagfile_links = generate_tag_links(post_path,tag_paths)
-  #   tagfile_links
-  # end
 
   def find_meta_data(content)
     split_contents = content.split('---')
@@ -29,7 +20,6 @@ class MetaData
 
   def downcase_tags(tags)
     tags.map do |value|
-      p value
       value.downcase
     end
   end
@@ -42,11 +32,10 @@ class MetaData
 
   def make_files_for_tags(tags, post_path, path)
     tag_paths = []
-    tags[0].split(", ").map do |tag|
-      #FileMaker.new.create_file("#{path}/_output/tags/#{tag}.html", "#{tag}")
+    tags.map do |tag|
       tag_path = "#{path}/_output/tags/#{tag}.html"
       tag_paths << tag_path
-      File.open(File.join(Dir.home,tag_path),"a") { |f|
+      File.open(File.join(Dir.home,tag_path), 'a') { |f|
         f.puts("<a href='#{post_path}'>#{post_path}</a>")
       }
     end
@@ -56,7 +45,7 @@ class MetaData
   def generate_tag_links(post_path,tag_paths)
     tagfile_links = []
     tag_paths.each do |tag_path|
-      tagfile_links << "<a href='#{tag_path}'>#{tag_path}</a>"
+      tagfile_links << "<a href='../tags/#{tag_path}.html'>#{tag_path}</a>"
     end
     tagfile_links
   end

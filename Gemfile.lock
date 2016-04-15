@@ -15,9 +15,13 @@ GEM
     diff-lcs (1.2.5)
     docile (1.1.5)
     equalizer (0.0.11)
+    ffi (1.9.10)
     ice_nine (0.11.1)
     json (1.8.3)
     kramdown (1.9.0)
+    listen (3.0.6)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9.7)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     method_source (0.8.2)
@@ -33,6 +37,9 @@ GEM
       slop (~> 3.4)
     rainbow (2.0.0)
     rake (10.5.0)
+    rb-fsevent (0.9.7)
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
     reek (3.6.1)
       parser (~> 2.2, >= 2.2.2.5)
       private_attr (~> 1.1)
@@ -60,6 +67,7 @@ PLATFORMS
 DEPENDENCIES
   cane
   kramdown
+  listen (~> 3.0)
   minitest
   pry
   rake

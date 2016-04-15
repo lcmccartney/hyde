@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 class TestHelper
 
   def meta_helper

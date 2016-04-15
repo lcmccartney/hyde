@@ -1,5 +1,5 @@
 <html>
-  <head><title>WHAT</title></head>
+  <head><title> <%= title %> </title></head>
   <body>
 
     <%= html %>
@@ -8,6 +8,5 @@
     <% for link in tagfile_links %>
     <%= link %><br>
     <% end %>
-    This is default.txt doing stuff
   </body>
 </html>
