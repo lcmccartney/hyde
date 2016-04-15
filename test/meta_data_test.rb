@@ -9,6 +9,8 @@ class MetaDataTest < Minitest::Test
   def setup
     @meta_data = MetaData.new
     @test_helper = TestHelper.new
+    `bin/hyde new blog`
+    `bin/hyde build blog`
   end
 
   def test_it_can_find_tags
@@ -26,5 +28,9 @@ class MetaDataTest < Minitest::Test
   def test_it_can_make_tag_files
     assert_equal [12, 9], @meta_data.make_files_for_tags(["italian_food, flatbread"])
   end
+
+  # def test_it_can_return_empty_array_if_no_tags_are_given
+  #   assert_equal "", @meta_data.parse_tags_and_make_tag_files("content", "")
+  # end
 
 end
