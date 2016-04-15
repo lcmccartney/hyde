@@ -11,7 +11,7 @@ class MetaData
     downcased = downcase_tags(tags)
     formatted_tags = snake_case(downcased)
     tag_paths = make_files_for_tags(formatted_tags, post_path, path)
-    tagfile_links = generate_tag_links(post_path,tag_paths)
+    tagfile_links = generate_tag_links(post_path, formatted_tags)
     tagfile_links
   end
 
@@ -42,7 +42,8 @@ class MetaData
 
   def make_files_for_tags(tags, post_path, path)
     tag_paths = []
-    tags[0].split(", ").map do |tag|
+    tags.map do |tag|
+      # require 'pry' ; binding.pry
       #FileMaker.new.create_file("#{path}/_output/tags/#{tag}.html", "#{tag}")
       tag_path = "#{path}/_output/tags/#{tag}.html"
       tag_paths << tag_path
@@ -56,7 +57,7 @@ class MetaData
   def generate_tag_links(post_path,tag_paths)
     tagfile_links = []
     tag_paths.each do |tag_path|
-      tagfile_links << "<a href='#{tag_path}'>#{tag_path}</a>"
+      tagfile_links << "<a href='../tags/#{tag_path}.html'>#{tag_path}</a>"
     end
     tagfile_links
   end

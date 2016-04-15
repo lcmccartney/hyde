@@ -11,7 +11,7 @@ class Post
       tags: Italian Food, flatbread
       ---
 
-    # #{title}\n\nYour content here!"
+    # Your content here!"
   end
 
   def date
